@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
 
 class MobileLayout extends StatelessWidget {
@@ -19,6 +20,12 @@ class MobileLayout extends StatelessWidget {
             height: 100.h,
             child: const CarsStatus(),
           ),
+          verticalSpace(16),
+          const HomeViewBanner(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Container(),
+          )
         ],
       ),
     );
