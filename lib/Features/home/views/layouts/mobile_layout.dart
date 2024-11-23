@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
+import 'package:ui_challenge/Core/utils/spacing.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
 
 class MobileLayout extends StatelessWidget {
   MobileLayout({super.key});
@@ -8,33 +11,16 @@ class MobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Container(
-          height: 150,
-          color: themeController.isDarkMode.value
-              ? Colors.blue[900]
-              : Colors.blue[100],
-          child: const Center(
-            child: Text(
-              'Main Content',
-              style: TextStyle(fontSize: 18),
-            ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          verticalSpace(16),
+          SizedBox(
+            height: 100.h,
+            child: const CarsStatus(),
           ),
-        ),
-        Container(
-          height: 100,
-          color: themeController.isDarkMode.value
-              ? Colors.blue[800]
-              : Colors.blue[50],
-          child: const Center(
-            child: Text(
-              'Sub Content',
-              style: TextStyle(fontSize: 18),
-            ),
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
