@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
@@ -25,6 +26,15 @@ class UiChallenge extends StatelessWidget {
           themeMode: themeController.isDarkMode.value
               ? ThemeMode.dark
               : ThemeMode.light,
+          locale: const Locale('ar'),
+          supportedLocales: const [
+            Locale('ar'),
+          ],
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
           home: HomeView(),
           onGenerateRoute: appRouter.generateRoute,
           initialRoute: Routes.homeView,
