@@ -26,6 +26,7 @@ class HomeView extends StatelessWidget {
             );
           }),
         ],
+        automaticallyImplyLeading: false,
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
