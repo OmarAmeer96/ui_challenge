@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ui_challenge/constants.dart';
 
 class HomeViewSearchBar extends StatelessWidget {
   final String hintText;
@@ -23,7 +24,7 @@ class HomeViewSearchBar extends StatelessWidget {
               child: SvgPicture.asset(
                 'assets/icons/Home - Search.svg',
                 colorFilter: const ColorFilter.mode(
-                  Color(0xff42455c),
+                  kPrimaryColor,
                   BlendMode.srcIn,
                 ),
                 width: 16,
