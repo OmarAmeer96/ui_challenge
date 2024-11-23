@@ -5,6 +5,7 @@ import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_search_bar.dart';
 
 class MobileLayout extends StatelessWidget {
   MobileLayout({super.key});
@@ -22,10 +23,10 @@ class MobileLayout extends StatelessWidget {
           ),
           verticalSpace(16),
           const HomeViewBanner(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Container(),
-          )
+          verticalSpace(16),
+          const HomeViewSearchBar(
+            hintText: "ابحث عن سيارتك",
+          ),
         ],
       ),
     );
