@@ -42,12 +42,12 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                     ? 22
                     : layoutType == "tablet"
                         ? 24
-                        : 20,
+                        : 24,
                 height: layoutType == "mobile"
                     ? 22
                     : layoutType == "tablet"
                         ? 24
-                        : 20,
+                        : 24,
               ),
             if (icon.isNotEmpty) verticalSpace(2),
             Text(

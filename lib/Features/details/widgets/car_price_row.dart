@@ -23,10 +23,10 @@ class CarPriceRow extends StatelessWidget {
                 ? Colors.white
                 : Colors.grey[800],
             fontSize: layoutType == "mobile"
-                ? 18.sp
+                ? 16.sp
                 : layoutType == "tablet"
                     ? 16.sp
-                    : 12.sp,
+                    : 8.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -35,10 +35,10 @@ class CarPriceRow extends StatelessWidget {
           '12,000',
           style: TextStyle(
             fontSize: layoutType == "mobile"
-                ? 20.sp
+                ? 18.sp
                 : layoutType == "tablet"
                     ? 18.sp
-                    : 12.sp,
+                    : 8.sp,
             fontWeight: FontWeight.w900,
           ),
         ),
@@ -52,7 +52,7 @@ class CarPriceRow extends StatelessWidget {
                 ? 14.sp
                 : layoutType == "tablet"
                     ? 12.sp
-                    : 8.sp,
+                    : 6.sp,
             fontWeight: FontWeight.bold,
           ),
         )
