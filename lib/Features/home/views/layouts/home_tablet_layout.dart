@@ -9,8 +9,8 @@ import 'package:ui_challenge/Features/home/widgets/home_view_cars_categories.dar
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_search_bar.dart';
 
-class TabletLayout extends StatelessWidget {
-  TabletLayout({super.key});
+class HomeTabletLayout extends StatelessWidget {
+  HomeTabletLayout({super.key});
   final ThemeController themeController = Get.find<ThemeController>();
 
   @override

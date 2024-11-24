@@ -9,8 +9,8 @@ import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_search_bar.dart';
 
-class MobileLayout extends StatelessWidget {
-  MobileLayout({super.key});
+class HomeMobileLayout extends StatelessWidget {
+  HomeMobileLayout({super.key});
   final ThemeController themeController = Get.find<ThemeController>();
 
   @override

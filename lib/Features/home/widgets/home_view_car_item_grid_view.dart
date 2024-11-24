@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ui_challenge/Features/details/views/car_details_view.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_car_item.dart';
 
 class HomeViewCarItemGridView extends StatelessWidget {
@@ -25,11 +27,20 @@ class HomeViewCarItemGridView extends StatelessWidget {
             vertical: 24,
             horizontal: 12,
           ),
-          child: CarItem(
-            layoutType: layoutType,
-            image: index % 2 == 0
-                ? 'assets/images/Image 1.png'
-                : 'assets/images/Image 11.png',
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () {
+              Get.to(
+                () => const CarDetailsView(),
+                transition: Transition.leftToRightWithFade,
+              );
+            },
+            child: CarItem(
+              layoutType: layoutType,
+              image: index % 2 == 0
+                  ? 'assets/images/Image 1.png'
+                  : 'assets/images/Image 11.png',
+            ),
           ),
         );
       },

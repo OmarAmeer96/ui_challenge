@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
-import 'package:ui_challenge/Features/home/views/layouts/desktop_layout.dart';
-import 'package:ui_challenge/Features/home/views/layouts/mobile_layout.dart';
-import 'package:ui_challenge/Features/home/views/layouts/tablet_layout.dart';
+import 'package:ui_challenge/Features/home/views/layouts/home_desktop_layout.dart';
+import 'package:ui_challenge/Features/home/views/layouts/home_mobile_layout.dart';
+import 'package:ui_challenge/Features/home/views/layouts/home_tablet_layout.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_actions_icon.dart';
 
 class HomeView extends StatelessWidget {
@@ -69,13 +69,13 @@ class HomeView extends StatelessWidget {
         builder: (context, constraints) {
           if (constraints.maxWidth >= 800) {
             // Desktop Layout
-            return DesktopLayout();
+            return HomeDesktopLayout();
           } else if (constraints.maxWidth >= 600) {
             // Tablet Layout
-            return TabletLayout();
+            return HomeTabletLayout();
           } else {
             // Mobile Layout
-            return MobileLayout();
+            return HomeMobileLayout();
           }
         },
       ),
