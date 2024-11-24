@@ -61,7 +61,7 @@ class DetailsMobileLayout extends StatelessWidget {
                       verticalSpace(16),
                       const CarDescriptionText(),
                       verticalSpace(16),
-                      const CarProviderWidget(),
+                      CarProviderWidget(),
                       verticalSpace(16),
                     ],
                   ),
@@ -70,7 +70,7 @@ class DetailsMobileLayout extends StatelessWidget {
                   layoutType: "mobile",
                   itemCount: 2,
                 ),
-                verticalSpace(76),
+                verticalSpace(100),
               ],
             ),
           ),
@@ -81,7 +81,9 @@ class DetailsMobileLayout extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              color: Colors.white,
+              color: themeController.isDarkMode.value
+                  ? Colors.grey.shade900
+                  : Colors.white,
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -106,22 +108,24 @@ class DetailsMobileLayout extends StatelessWidget {
                   const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: DetailsBottomBarIconWithText(
+                    icon: const DetailsBottomBarIconWithText(
                       icon: 'assets/icons/Car Page - Location.svg',
                       iconColor: Colors.white,
-                      backgroundColor: const Color(0xff50536c),
+                      backgroundColor: Color(0xff50536c),
                       buttonText: "موقع السيارة",
-                      textColor: themeController.isDarkMode.value
-                          ? const Color(0xff50536c)
-                          : Colors.white,
+                      textColor: Colors.white,
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
                     icon: DetailsBottomBarIconWithText(
                       icon: 'assets/icons/Car Page - Book.svg',
-                      iconColor: const Color(0xff50536c),
-                      backgroundColor: Colors.white,
+                      iconColor: themeController.isDarkMode.value
+                          ? Colors.white
+                          : const Color(0xff50536c),
+                      backgroundColor: themeController.isDarkMode.value
+                          ? Colors.grey.shade900
+                          : Colors.white,
                       borderColor: const Color(0xff50536c),
                       buttonText: "احجز السيارة",
                       textColor: themeController.isDarkMode.value

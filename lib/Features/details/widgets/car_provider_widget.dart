@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
 
 class CarProviderWidget extends StatelessWidget {
-  const CarProviderWidget({super.key});
+  CarProviderWidget({super.key});
+
+  final ThemeController themeController = Get.find<ThemeController>();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +33,9 @@ class CarProviderWidget extends StatelessWidget {
           Text(
             'يوكن للسيارات المعتمدة',
             style: TextStyle(
-              color: Colors.black.withOpacity(0.6),
+              color: themeController.isDarkMode.value
+                  ? Colors.white
+                  : Colors.black.withOpacity(0.6),
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
@@ -38,7 +44,9 @@ class CarProviderWidget extends StatelessWidget {
           Text(
             'كل السيارات',
             style: TextStyle(
-              color: Colors.black.withOpacity(0.6),
+              color: themeController.isDarkMode.value
+                  ? Colors.white
+                  : Colors.black.withOpacity(0.6),
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
