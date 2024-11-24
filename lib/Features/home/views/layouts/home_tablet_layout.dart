@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
-import 'package:ui_challenge/Features/home/widgets/home_view_car_item_grid_view.dart';
+import 'package:ui_challenge/Core/widgets/car_item_grid_view.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_categories.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_search_bar.dart';
@@ -39,7 +39,7 @@ class HomeTabletLayout extends StatelessWidget {
             layoutType: "tablet",
           ),
           verticalSpace(16),
-          const HomeViewCarItemGridView(
+          const CarItemGridView(
             layoutType: "tablet",
           ),
           verticalSpace(16),

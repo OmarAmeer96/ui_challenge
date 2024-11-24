@@ -14,7 +14,7 @@ class CarDetailsView extends StatelessWidget {
           builder: (context, constraints) {
             if (constraints.maxWidth >= 800) {
               // Desktop Layout
-              return const DetailsDesktopLayout();
+              return DetailsDesktopLayout();
             } else if (constraints.maxWidth >= 600) {
               // Tablet Layout
               return DetailsTabletLayout();

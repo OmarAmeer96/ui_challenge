@@ -6,9 +6,11 @@ import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 class CarPriceRow extends StatelessWidget {
   CarPriceRow({
     super.key,
+    required this.layoutType,
   });
 
   final ThemeController themeController = Get.find<ThemeController>();
+  final String layoutType;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,11 @@ class CarPriceRow extends StatelessWidget {
             color: themeController.isDarkMode.value
                 ? Colors.white
                 : Colors.grey[800],
-            fontSize: 18.sp,
+            fontSize: layoutType == "mobile"
+                ? 18.sp
+                : layoutType == "tablet"
+                    ? 16.sp
+                    : 12.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -28,7 +34,11 @@ class CarPriceRow extends StatelessWidget {
         Text(
           '12,000',
           style: TextStyle(
-            fontSize: 20.sp,
+            fontSize: layoutType == "mobile"
+                ? 20.sp
+                : layoutType == "tablet"
+                    ? 18.sp
+                    : 12.sp,
             fontWeight: FontWeight.w900,
           ),
         ),
@@ -38,7 +48,11 @@ class CarPriceRow extends StatelessWidget {
             color: themeController.isDarkMode.value
                 ? Colors.white70
                 : Colors.grey[700],
-            fontSize: 14.sp,
+            fontSize: layoutType == "mobile"
+                ? 14.sp
+                : layoutType == "tablet"
+                    ? 12.sp
+                    : 8.sp,
             fontWeight: FontWeight.bold,
           ),
         )

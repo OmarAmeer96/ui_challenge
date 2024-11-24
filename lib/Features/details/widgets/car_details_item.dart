@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
@@ -9,9 +10,10 @@ class CarDetailsItem extends StatelessWidget {
     required this.title,
     required this.value,
     required this.icon,
+    required this.layoutType,
   });
 
-  final String icon, title, value;
+  final String icon, title, value, layoutType;
   final ThemeController themeController = Get.find<ThemeController>();
 
   @override
@@ -33,13 +35,21 @@ class CarDetailsItem extends StatelessWidget {
                 horizontalSpace(8),
                 Image.asset(
                   icon,
-                  width: 22,
+                  width: layoutType == "mobile"
+                      ? 22
+                      : layoutType == "tablet"
+                          ? 18
+                          : 17,
                 ),
                 horizontalSpace(16),
                 Text(
                   title,
-                  style: const TextStyle(
-                    fontSize: 18,
+                  style: TextStyle(
+                    fontSize: layoutType == "mobile"
+                        ? 16.sp
+                        : layoutType == "tablet"
+                            ? 14.sp
+                            : 4.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -51,7 +61,13 @@ class CarDetailsItem extends StatelessWidget {
             child: Center(
               child: Text(
                 value,
-                style: const TextStyle(fontSize: 18),
+                style: TextStyle(
+                  fontSize: layoutType == "mobile"
+                      ? 16.sp
+                      : layoutType == "tablet"
+                          ? 14.sp
+                          : 4.sp,
+                ),
               ),
             ),
           ),

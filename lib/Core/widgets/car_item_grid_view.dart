@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:ui_challenge/Features/details/views/car_details_view.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_car_item.dart';
 
-class HomeViewCarItemGridView extends StatelessWidget {
-  const HomeViewCarItemGridView({
+class CarItemGridView extends StatelessWidget {
+  const CarItemGridView({
     super.key,
     required this.layoutType,
     this.itemCount = 9,

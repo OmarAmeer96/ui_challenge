@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
-import 'package:ui_challenge/Features/home/widgets/home_view_car_item_grid_view.dart';
+import 'package:ui_challenge/Core/widgets/car_item_grid_view.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_categories.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
 import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
@@ -39,7 +39,7 @@ class HomeMobileLayout extends StatelessWidget {
             layoutType: "mobile",
           ),
           verticalSpace(16),
-          const HomeViewCarItemGridView(
+          const CarItemGridView(
             layoutType: "mobile",
           ),
           verticalSpace(16),

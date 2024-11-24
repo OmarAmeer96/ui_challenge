@@ -10,7 +10,7 @@ import 'package:ui_challenge/Features/details/widgets/car_warranty_widget.dart';
 import 'package:ui_challenge/Features/details/widgets/custom_details_view_bottom_bar.dart';
 import 'package:ui_challenge/Features/details/widgets/details_view_app_bar_actions.dart';
 import 'package:ui_challenge/Features/details/widgets/details_view_car_description_list.dart';
-import 'package:ui_challenge/Features/home/widgets/home_view_car_item_grid_view.dart';
+import 'package:ui_challenge/Core/widgets/car_item_grid_view.dart';
 
 class DetailsMobileLayout extends StatelessWidget {
   DetailsMobileLayout({super.key});
@@ -42,7 +42,9 @@ class DetailsMobileLayout extends StatelessWidget {
                     bottom: -70,
                     left: 0,
                     right: 0,
-                    child: DetailsViewCarDiscriptionList(),
+                    child: DetailsViewCarDiscriptionList(
+                      layoutType: "mobile",
+                    ),
                   )
                 ],
               ),
@@ -51,20 +53,26 @@ class DetailsMobileLayout extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: Column(
                   children: [
-                    CarPriceRow(),
+                    CarPriceRow(
+                      layoutType: "mobile",
+                    ),
                     verticalSpace(16),
                     const CarWarrantyWidget(),
                     verticalSpace(16),
-                    const CarDetailsList(),
+                    const CarDetailsList(
+                      layoutType: "mobile",
+                    ),
                     verticalSpace(16),
-                    const CarDescriptionText(),
+                    const CarDescriptionText(
+                      layoutType: "mobile",
+                    ),
                     verticalSpace(16),
                     CarProviderWidget(),
                     verticalSpace(16),
                   ],
                 ),
               ),
-              const HomeViewCarItemGridView(
+              const CarItemGridView(
                 layoutType: "mobile",
                 itemCount: 2,
               ),

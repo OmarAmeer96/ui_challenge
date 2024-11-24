@@ -42,12 +42,12 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                     ? 30
                     : layoutType == "tablet"
                         ? 18
-                        : 16,
+                        : 20,
                 height: layoutType == "mobile"
                     ? 30
                     : layoutType == "tablet"
                         ? 18
-                        : 16,
+                        : 20,
               ),
             if (icon.isNotEmpty) verticalSpace(2),
             Text(
@@ -59,7 +59,7 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                     ? 16.sp
                     : layoutType == "tablet"
                         ? 6.sp
-                        : 4.sp,
+                        : 8.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -73,7 +73,7 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                     ? 18.sp
                     : layoutType == "tablet"
                         ? 6.sp
-                        : 3.sp,
+                        : 8.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),
