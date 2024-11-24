@@ -67,7 +67,7 @@ class HomeView extends StatelessWidget {
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth >= 1200) {
+          if (constraints.maxWidth >= 800) {
             // Desktop Layout
             return DesktopLayout();
           } else if (constraints.maxWidth >= 600) {

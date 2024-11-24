@@ -7,13 +7,19 @@ class HomeViewBanner extends StatelessWidget {
     'assets/images/Image 5.png',
   ];
 
-  const HomeViewBanner({super.key});
+  final String layoutType;
+
+  const HomeViewBanner({super.key, required this.layoutType});
 
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
       options: CarouselOptions(
-        height: 150.0,
+        height: layoutType == "mobile"
+            ? 150.0
+            : layoutType == "tablet"
+                ? 200.0
+                : 300.0,
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 3),
         autoPlayAnimationDuration: const Duration(milliseconds: 800),

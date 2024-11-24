@@ -24,13 +24,17 @@ class MobileLayout extends StatelessWidget {
             child: const CarsStatus(),
           ),
           verticalSpace(16),
-          const HomeViewBanner(),
+          const HomeViewBanner(
+            layoutType: "mobile",
+          ),
           verticalSpace(16),
           const HomeViewSearchBar(
             hintText: "ابحث عن سيارتك",
           ),
           verticalSpace(16),
-          const CarsCategories(),
+          const CarsCategories(
+            layoutType: "mobile",
+          ),
           verticalSpace(16),
           const HomeViewCarItemGridView(),
           verticalSpace(16),

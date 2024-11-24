@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
+import 'package:ui_challenge/Core/utils/spacing.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_banner.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_car_item_grid_view.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_cars_categories.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_cars_status.dart';
+import 'package:ui_challenge/Features/home/widgets/home_view_search_bar.dart';
 
 class TabletLayout extends StatelessWidget {
   TabletLayout({super.key});
@@ -8,37 +15,36 @@ class TabletLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          flex: 3,
-          child: Container(
-            color: themeController.isDarkMode.value
-                ? Colors.blue[900]
-                : Colors.blue[100],
-            child: const Center(
-              child: Text(
-                'Main Content',
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          verticalSpace(16),
+          SizedBox(
+            height: 100.h,
+            child: const CarsStatus(),
           ),
-        ),
-        Expanded(
-          flex: 2,
-          child: Container(
-            color: themeController.isDarkMode.value
-                ? Colors.blue[800]
-                : Colors.blue[50],
-            child: const Center(
-              child: Text(
-                'Sub Content',
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
+          verticalSpace(16),
+          const HomeViewBanner(
+            layoutType: "tablet",
           ),
-        ),
-      ],
+          verticalSpace(16),
+          const HomeViewSearchBar(
+            hintText: "ابحث عن سيارتك",
+          ),
+          verticalSpace(16),
+          const CarsCategories(
+            layoutType: "tablet",
+          ),
+          verticalSpace(16),
+          const HomeViewCarItemGridView(),
+          verticalSpace(16),
+          Image.asset(
+            'assets/images/Image 5.png',
+            width: double.infinity,
+            fit: BoxFit.fill,
+          ),
+        ],
+      ),
     );
   }
 }
