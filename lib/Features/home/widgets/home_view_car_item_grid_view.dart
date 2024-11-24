@@ -7,9 +7,11 @@ class HomeViewCarItemGridView extends StatelessWidget {
   const HomeViewCarItemGridView({
     super.key,
     required this.layoutType,
+    this.itemCount = 9,
   });
 
   final String layoutType;
+  final int itemCount;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class HomeViewCarItemGridView extends StatelessWidget {
         crossAxisCount: layoutType == "desktop" ? 3 : 2,
         childAspectRatio: 1.5,
       ),
-      itemCount: 9,
+      itemCount: itemCount,
       itemBuilder: (context, index) {
         return Padding(
           padding: const EdgeInsets.symmetric(

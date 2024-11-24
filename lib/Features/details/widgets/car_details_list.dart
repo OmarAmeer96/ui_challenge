@@ -47,7 +47,7 @@ class CarDetailsList extends StatelessWidget {
         verticalSpace(4),
         const CarDetailsItem(
           icon: 'assets/icons/car_engine.png',
-          title: 'سيليندر',
+          title: 'سلندر',
           value: '6',
         ),
         verticalSpace(4),
