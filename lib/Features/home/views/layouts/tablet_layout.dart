@@ -21,7 +21,9 @@ class TabletLayout extends StatelessWidget {
           verticalSpace(16),
           SizedBox(
             height: 100.h,
-            child: const CarsStatus(),
+            child: const CarsStatus(
+              layoutType: "tablet",
+            ),
           ),
           verticalSpace(16),
           const HomeViewBanner(
@@ -30,13 +32,16 @@ class TabletLayout extends StatelessWidget {
           verticalSpace(16),
           const HomeViewSearchBar(
             hintText: "ابحث عن سيارتك",
+            layoutType: "tablet",
           ),
           verticalSpace(16),
           const CarsCategories(
             layoutType: "tablet",
           ),
           verticalSpace(16),
-          const HomeViewCarItemGridView(),
+          const HomeViewCarItemGridView(
+            layoutType: "tablet",
+          ),
           verticalSpace(16),
           Image.asset(
             'assets/images/Image 5.png',

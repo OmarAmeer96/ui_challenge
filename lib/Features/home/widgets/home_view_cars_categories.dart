@@ -38,8 +38,8 @@ class _CarsCategoriesState extends State<CarsCategories> {
               height: widget.layoutType == "mobile"
                   ? 40.h
                   : widget.layoutType == "tablet"
-                      ? 50.h
-                      : 60.h,
+                      ? 45.h
+                      : 50.h,
               decoration: BoxDecoration(
                 color: selectedIndex == index
                     ? const Color(0xff757685)
@@ -54,10 +54,10 @@ class _CarsCategoriesState extends State<CarsCategories> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: widget.layoutType == "mobile"
-                          ? 14.sp
+                          ? 12.sp
                           : widget.layoutType == "tablet"
                               ? 12.sp
-                              : 12.sp,
+                              : 4.sp,
                     ),
                   ),
                 ),

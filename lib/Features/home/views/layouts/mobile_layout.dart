@@ -20,8 +20,10 @@ class MobileLayout extends StatelessWidget {
         children: [
           verticalSpace(16),
           SizedBox(
-            height: 100.h,
-            child: const CarsStatus(),
+            height: 110.h,
+            child: const CarsStatus(
+              layoutType: "mobile",
+            ),
           ),
           verticalSpace(16),
           const HomeViewBanner(
@@ -30,13 +32,16 @@ class MobileLayout extends StatelessWidget {
           verticalSpace(16),
           const HomeViewSearchBar(
             hintText: "ابحث عن سيارتك",
+            layoutType: "mobile",
           ),
           verticalSpace(16),
           const CarsCategories(
             layoutType: "mobile",
           ),
           verticalSpace(16),
-          const HomeViewCarItemGridView(),
+          const HomeViewCarItemGridView(
+            layoutType: "mobile",
+          ),
           verticalSpace(16),
           Image.asset(
             'assets/images/Image 5.png',

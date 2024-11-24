@@ -19,12 +19,12 @@ class HomeViewBanner extends StatelessWidget {
             ? 150.0
             : layoutType == "tablet"
                 ? 200.0
-                : 300.0,
+                : 150.0,
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 3),
         autoPlayAnimationDuration: const Duration(milliseconds: 800),
         enlargeCenterPage: true,
-        viewportFraction: 0.8,
+        viewportFraction: 0.7,
       ),
       items: imagePaths.map((imagePath) {
         return Builder(

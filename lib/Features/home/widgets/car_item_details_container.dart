@@ -10,10 +10,12 @@ class CarItemDetailsContainer extends StatelessWidget {
     required this.categoryText,
     required this.valueText,
     required this.iconColor,
+    required this.layoutType,
   });
 
   final String icon, categoryText, valueText;
   final Color iconColor;
+  final String layoutType;
 
   @override
   Widget build(BuildContext context) {
@@ -36,16 +38,28 @@ class CarItemDetailsContainer extends StatelessWidget {
                   iconColor,
                   BlendMode.srcIn,
                 ),
-                width: 16,
-                height: 16,
+                width: layoutType == "mobile"
+                    ? 16
+                    : layoutType == "tablet"
+                        ? 18
+                        : 16,
+                height: layoutType == "mobile"
+                    ? 16
+                    : layoutType == "tablet"
+                        ? 18
+                        : 16,
               ),
             if (icon.isNotEmpty) verticalSpace(2),
             Text(
               categoryText,
-              textAlign: TextAlign.center,
+            textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 10.sp,
+                fontSize: layoutType == "mobile"
+                    ? 10.sp
+                    : layoutType == "tablet"
+                        ? 6.sp
+                        : 4.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -55,7 +69,11 @@ class CarItemDetailsContainer extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 8.sp,
+                fontSize: layoutType == "mobile"
+                    ? 8.sp
+                    : layoutType == "tablet"
+                        ? 6.sp
+                        : 3.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),

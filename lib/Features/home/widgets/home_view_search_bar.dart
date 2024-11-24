@@ -9,7 +9,10 @@ class HomeViewSearchBar extends StatelessWidget {
   const HomeViewSearchBar({
     super.key,
     required this.hintText,
+    required this.layoutType,
   });
+
+  final String layoutType;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +30,11 @@ class HomeViewSearchBar extends StatelessWidget {
                   kPrimaryColor,
                   BlendMode.srcIn,
                 ),
-                width: 16,
+                width: layoutType == "mobile"
+                    ? 16
+                    : layoutType == "tablet"
+                        ? 18
+                        : 18,
               ),
             ),
           ),
@@ -36,10 +43,18 @@ class HomeViewSearchBar extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),
-          contentPadding:
-              EdgeInsets.symmetric(vertical: 12.h, horizontal: 16.w),
+          contentPadding: EdgeInsets.symmetric(
+            vertical: 12.h,
+            horizontal: 16.w,
+          ),
         ),
-        style: TextStyle(fontSize: 14.sp),
+        style: TextStyle(
+          fontSize: layoutType == "mobile"
+              ? 14.sp
+              : layoutType == "tablet"
+                  ? 12.sp
+                  : 6.sp,
+        ),
       ),
     );
   }
