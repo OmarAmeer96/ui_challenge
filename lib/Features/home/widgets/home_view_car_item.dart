@@ -71,14 +71,14 @@ class CarItem extends StatelessWidget {
                 ),
                 horizontalSpace(2),
                 const CarItemDetailsContainer(
-                  icon: 'assets/icons/Car Page - Makfula.svg',
+                  icon: 'assets/icons/Home - Ad3.svg',
                   categoryText: 'كم',
                   valueText: '20,000',
                   iconColor: Color(0xff456385),
                 ),
                 horizontalSpace(2),
                 const CarItemDetailsContainer(
-                  icon: 'assets/icons/Home - Ad3.svg',
+                  icon: 'assets/icons/Car Page - Makfula.svg',
                   categoryText: 'مكفولة لـ',
                   valueText: '2021',
                   iconColor: Color(0xff456385),

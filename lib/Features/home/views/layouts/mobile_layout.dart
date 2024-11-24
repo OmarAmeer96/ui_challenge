@@ -33,6 +33,12 @@ class MobileLayout extends StatelessWidget {
           const CarsCategories(),
           verticalSpace(16),
           const HomeViewCarItemGridView(),
+          verticalSpace(16),
+          Image.asset(
+            'assets/images/Image 5.png',
+            width: double.infinity,
+            fit: BoxFit.fill,
+          ),
         ],
       ),
     );
