@@ -42,7 +42,7 @@ class CustonDetailsViewBottomBar extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const DetailsBottomBarIconWithText(
-              icon: 'assets/icons/Car Page - Location.svg',
+              icon: 'assets/icons/location-svgrepo-com.svg',
               iconColor: Colors.white,
               backgroundColor: Color(0xff50536c),
               buttonText: "موقع السيارة",
