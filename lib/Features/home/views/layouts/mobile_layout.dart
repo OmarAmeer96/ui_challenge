@@ -25,7 +25,7 @@ class MobileLayout extends StatelessWidget {
               layoutType: "mobile",
             ),
           ),
-          verticalSpace(16),
+          // verticalSpace(16),
           const HomeViewBanner(
             layoutType: "mobile",
           ),

@@ -40,7 +40,7 @@ class CarsStatus extends StatelessWidget {
                 'جيلي',
                 style: TextStyle(
                   fontSize: layoutType == "mobile"
-                      ? 10.sp
+                      ? 12.sp
                       : layoutType == "tablet"
                           ? 8.sp
                           : 4.sp,

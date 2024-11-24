@@ -52,7 +52,7 @@ class CarItemDetailsContainer extends StatelessWidget {
             if (icon.isNotEmpty) verticalSpace(2),
             Text(
               categoryText,
-            textAlign: TextAlign.center,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
                 fontSize: layoutType == "mobile"
