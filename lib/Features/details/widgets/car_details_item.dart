@@ -36,17 +36,20 @@ class CarDetailsItem extends StatelessWidget {
                 Image.asset(
                   icon,
                   width: layoutType == "mobile"
-                      ? 22
+                      ? 20
                       : layoutType == "tablet"
                           ? 18
                           : 17,
+                  color: themeController.isDarkMode.value
+                      ? Colors.white
+                      : Colors.black,
                 ),
                 horizontalSpace(16),
                 Text(
                   title,
                   style: TextStyle(
                     fontSize: layoutType == "mobile"
-                        ? 16.sp
+                        ? 12.sp
                         : layoutType == "tablet"
                             ? 14.sp
                             : 4.sp,
@@ -63,7 +66,7 @@ class CarDetailsItem extends StatelessWidget {
                 value,
                 style: TextStyle(
                   fontSize: layoutType == "mobile"
-                      ? 16.sp
+                      ? 12.sp
                       : layoutType == "tablet"
                           ? 14.sp
                           : 4.sp,

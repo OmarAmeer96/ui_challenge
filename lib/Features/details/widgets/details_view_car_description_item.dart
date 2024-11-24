@@ -39,12 +39,12 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                   BlendMode.srcIn,
                 ),
                 width: layoutType == "mobile"
-                    ? 30
+                    ? 24
                     : layoutType == "tablet"
                         ? 18
                         : 20,
                 height: layoutType == "mobile"
-                    ? 30
+                    ? 24
                     : layoutType == "tablet"
                         ? 18
                         : 20,
@@ -56,7 +56,7 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.grey[600],
                 fontSize: layoutType == "mobile"
-                    ? 16.sp
+                    ? 14.sp
                     : layoutType == "tablet"
                         ? 6.sp
                         : 8.sp,
@@ -70,7 +70,7 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: layoutType == "mobile"
-                    ? 18.sp
+                    ? 16.sp
                     : layoutType == "tablet"
                         ? 6.sp
                         : 8.sp,
