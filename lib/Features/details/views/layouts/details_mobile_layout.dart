@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ui_challenge/Core/utils/spacing.dart';
+import 'package:ui_challenge/Features/details/widgets/car_details_list.dart';
+import 'package:ui_challenge/Features/details/widgets/car_price_row.dart';
+import 'package:ui_challenge/Features/details/widgets/car_warranty_widget.dart';
 import 'package:ui_challenge/Features/details/widgets/details_view_app_bar_icon.dart';
 import 'package:ui_challenge/Features/details/widgets/details_view_car_description_list.dart';
 
@@ -56,6 +60,19 @@ class DetailsMobileLayout extends StatelessWidget {
                 child: DetailsViewCarDiscriptionList(),
               )
             ],
+          ),
+          verticalSpace(86),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Column(
+              children: [
+                CarPriceRow(),
+                verticalSpace(16),
+                const CarWarrantyWidget(),
+                verticalSpace(16),
+                const CarDetailsList(),
+              ],
+            ),
           ),
         ],
       ),
