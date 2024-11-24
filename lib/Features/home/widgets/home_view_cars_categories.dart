@@ -30,7 +30,7 @@ class _CarsCategoriesState extends State<CarsCategories> {
               });
             },
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 500),
+              duration: const Duration(milliseconds: 200),
               curve: Curves.easeOut,
               width: selectedIndex == index ? 130.w : 90.w,
               height: 40.h,
