@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Features/details/layouts/details_desktop_layouts.dart';
-import 'package:ui_challenge/Features/details/layouts/details_mobile_layout.dart';
-import 'package:ui_challenge/Features/details/layouts/details_tablet_layout.dart';
+import 'package:ui_challenge/Features/details/views/layouts/details_desktop_layouts.dart';
+import 'package:ui_challenge/Features/details/views/layouts/details_mobile_layout.dart';
+import 'package:ui_challenge/Features/details/views/layouts/details_tablet_layout.dart';
 
 class CarDetailsView extends StatelessWidget {
   const CarDetailsView({super.key});
