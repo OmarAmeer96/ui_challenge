@@ -67,7 +67,9 @@ class DetailsMobileLayout extends StatelessWidget {
                       layoutType: "mobile",
                     ),
                     verticalSpace(16),
-                    CarProviderWidget(),
+                    CarProviderWidget(
+                      layoutType: "mobile",
+                    ),
                     verticalSpace(16),
                   ],
                 ),

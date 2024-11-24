@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_challenge/Core/controllers/theme_controller.dart';
 import 'package:ui_challenge/Core/utils/spacing.dart';
 
 class CarProviderWidget extends StatelessWidget {
-  CarProviderWidget({super.key});
+  CarProviderWidget({super.key, required this.layoutType});
 
   final ThemeController themeController = Get.find<ThemeController>();
+  final String layoutType;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,11 @@ class CarProviderWidget extends StatelessWidget {
               color: themeController.isDarkMode.value
                   ? Colors.white
                   : Colors.black.withOpacity(0.6),
-              fontSize: 16,
+              fontSize: layoutType == "mobile"
+                  ? 8.sp
+                  : layoutType == "tablet"
+                      ? 8.sp
+                      : 3.sp,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -47,7 +53,11 @@ class CarProviderWidget extends StatelessWidget {
               color: themeController.isDarkMode.value
                   ? Colors.white
                   : Colors.black.withOpacity(0.6),
-              fontSize: 16,
+              fontSize: layoutType == "mobile"
+                  ? 8.sp
+                  : layoutType == "tablet"
+                      ? 8.sp
+                      : 3.sp,
               fontWeight: FontWeight.bold,
             ),
           ),

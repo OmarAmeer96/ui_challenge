@@ -39,14 +39,14 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
                   BlendMode.srcIn,
                 ),
                 width: layoutType == "mobile"
-                    ? 24
+                    ? 22
                     : layoutType == "tablet"
-                        ? 18
+                        ? 24
                         : 20,
                 height: layoutType == "mobile"
-                    ? 24
+                    ? 22
                     : layoutType == "tablet"
-                        ? 18
+                        ? 24
                         : 20,
               ),
             if (icon.isNotEmpty) verticalSpace(2),
@@ -56,9 +56,9 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.grey[600],
                 fontSize: layoutType == "mobile"
-                    ? 14.sp
+                    ? 12.sp
                     : layoutType == "tablet"
-                        ? 6.sp
+                        ? 14.sp
                         : 8.sp,
                 fontWeight: FontWeight.bold,
               ),
@@ -70,9 +70,9 @@ class DetailsViewCarDescriptionItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: layoutType == "mobile"
-                    ? 16.sp
+                    ? 14.sp
                     : layoutType == "tablet"
-                        ? 6.sp
+                        ? 16.sp
                         : 8.sp,
                 fontWeight: FontWeight.bold,
               ),

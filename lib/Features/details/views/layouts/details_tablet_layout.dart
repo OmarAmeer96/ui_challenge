@@ -67,7 +67,9 @@ class DetailsTabletLayout extends StatelessWidget {
                       layoutType: "tablet",
                     ),
                     verticalSpace(16),
-                    CarProviderWidget(),
+                    CarProviderWidget(
+                      layoutType: "tablet",
+                    ),
                     verticalSpace(16),
                   ],
                 ),

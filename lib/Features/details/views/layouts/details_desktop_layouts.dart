@@ -95,7 +95,9 @@ class DetailsDesktopLayout extends StatelessWidget {
                             verticalSpace(16),
                             const CarWarrantyWidget(),
                             verticalSpace(16),
-                            CarProviderWidget(),
+                            CarProviderWidget(
+                              layoutType: "desktop",
+                            ),
                             verticalSpace(16),
                             const Text(
                               "اقتراحات لك",

@@ -38,7 +38,7 @@ class CarDetailsItem extends StatelessWidget {
                   width: layoutType == "mobile"
                       ? 20
                       : layoutType == "tablet"
-                          ? 18
+                          ? 20
                           : 17,
                   color: themeController.isDarkMode.value
                       ? Colors.white
@@ -51,7 +51,7 @@ class CarDetailsItem extends StatelessWidget {
                     fontSize: layoutType == "mobile"
                         ? 12.sp
                         : layoutType == "tablet"
-                            ? 14.sp
+                            ? 12.sp
                             : 4.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -66,9 +66,9 @@ class CarDetailsItem extends StatelessWidget {
                 value,
                 style: TextStyle(
                   fontSize: layoutType == "mobile"
-                      ? 12.sp
+                      ? 10.sp
                       : layoutType == "tablet"
-                          ? 14.sp
+                          ? 10.sp
                           : 4.sp,
                 ),
               ),
