@@ -19,69 +19,67 @@ class DetailsMobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Scrollable Content
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                Stack(
-                  clipBehavior: Clip.none,
+    return Stack(
+      children: [
+        // Scrollable Content
+        SingleChildScrollView(
+          child: Column(
+            children: [
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Image.asset(
+                    'assets/images/yukon_image.jpg',
+                    fit: BoxFit.fill,
+                  ),
+                  const Positioned(
+                    top: 12,
+                    right: 0,
+                    left: 0,
+                    child: DetailsViewAppBarActions(),
+                  ),
+                  const Positioned(
+                    bottom: -70,
+                    left: 0,
+                    right: 0,
+                    child: DetailsViewCarDiscriptionList(),
+                  )
+                ],
+              ),
+              verticalSpace(86),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Column(
                   children: [
-                    Image.asset(
-                      'assets/images/yukon_image.jpg',
-                      fit: BoxFit.fill,
-                    ),
-                    const Positioned(
-                      top: 12,
-                      right: 0,
-                      left: 0,
-                      child: DetailsViewAppBarActions(),
-                    ),
-                    const Positioned(
-                      bottom: -70,
-                      left: 0,
-                      right: 0,
-                      child: DetailsViewCarDiscriptionList(),
-                    )
+                    CarPriceRow(),
+                    verticalSpace(16),
+                    const CarWarrantyWidget(),
+                    verticalSpace(16),
+                    const CarDetailsList(),
+                    verticalSpace(16),
+                    const CarDescriptionText(),
+                    verticalSpace(16),
+                    CarProviderWidget(),
+                    verticalSpace(16),
                   ],
                 ),
-                verticalSpace(86),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Column(
-                    children: [
-                      CarPriceRow(),
-                      verticalSpace(16),
-                      const CarWarrantyWidget(),
-                      verticalSpace(16),
-                      const CarDetailsList(),
-                      verticalSpace(16),
-                      const CarDescriptionText(),
-                      verticalSpace(16),
-                      CarProviderWidget(),
-                      verticalSpace(16),
-                    ],
-                  ),
-                ),
-                const HomeViewCarItemGridView(
-                  layoutType: "mobile",
-                  itemCount: 2,
-                ),
-                verticalSpace(100),
-              ],
-            ),
+              ),
+              const HomeViewCarItemGridView(
+                layoutType: "mobile",
+                itemCount: 2,
+              ),
+              verticalSpace(100),
+            ],
           ),
-          // Fixed Bottom Bar
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: CustonDetailsViewBottomBar(themeController: themeController),
-          ),
-        ],
-      ),
+        ),
+        // Fixed Bottom Bar
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: CustonDetailsViewBottomBar(themeController: themeController),
+        ),
+      ],
     );
   }
 }
