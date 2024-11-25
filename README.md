@@ -11,7 +11,7 @@ This project is a submission for the Flutter Developer position. The task was to
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
-  - [Screenshots and Recordings](#screenshots-and-recordings)
+  - [Demo](#demo)
   - [Installation](#installation)
   - [Approach](#approach)
   - [Conclusion](#conclusion)
@@ -26,22 +26,23 @@ This project is a submission for the Flutter Developer position. The task was to
 - 🧩 State Management: Utilized GetX for state management and dependency injection.
 
 
-## Screenshots and Recordings
+## Demo
 
-### Mobile View
-![Mobile View](assets/mobile_view.png)
+### testing the app on mobile device
+https://github.com/user-attachments/assets/ab35a0cc-cea1-48b2-9d5a-578a9731346d
 
-### Tablet View
-![Tablet View](assets/tablet_view.png)
+### testing the app on web browser
+https://github.com/user-attachments/assets/6b46bbd1-a6e2-41b1-ac91-3947234f04f4
 
-### Desktop View
-![Desktop View](assets/desktop_view.png)
 
-### Dark Mode
-![Dark Mode](assets/dark_mode.png)
+### Onboarding
+<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/181edcee-3d23-469a-b361-5ecac9ccc2e1" width="400">
 
-### Screen Recording
-![Screen Recording](assets/screen_recording.gif)
+### User Authentication
+Users can create accounts and log in to access personalized features.
+
+<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/dcbba38a-d784-4fa1-85e6-7a3efef6eaa6" width="400">
+<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/e657955b-2b7e-46cb-ae24-3a293ed38cbd" width="400">
 
 
 ## Installation
