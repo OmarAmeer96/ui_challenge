@@ -11,6 +11,7 @@ This project is a submission for the Flutter Developer position. The task was to
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
+  - [Screenshots and Recordings](#screenshots-and-recordings)
   - [Installation](#installation)
   - [Approach](#approach)
   - [Conclusion](#conclusion)
@@ -23,6 +24,24 @@ This project is a submission for the Flutter Developer position. The task was to
 - 🌙 Dark Mode: A button to toggle between light and dark modes.
 - 🎨 Smooth Animations: Basic UI animations to enhance user experience.
 - 🧩 State Management: Utilized GetX for state management and dependency injection.
+
+
+## Screenshots and Recordings
+
+### Mobile View
+![Mobile View](assets/mobile_view.png)
+
+### Tablet View
+![Tablet View](assets/tablet_view.png)
+
+### Desktop View
+![Desktop View](assets/desktop_view.png)
+
+### Dark Mode
+![Dark Mode](assets/dark_mode.png)
+
+### Screen Recording
+![Screen Recording](assets/screen_recording.gif)
 
 
 ## Installation
