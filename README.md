@@ -35,16 +35,6 @@ https://github.com/user-attachments/assets/ab35a0cc-cea1-48b2-9d5a-578a9731346d
 https://github.com/user-attachments/assets/6b46bbd1-a6e2-41b1-ac91-3947234f04f4
 
 
-### Onboarding
-<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/181edcee-3d23-469a-b361-5ecac9ccc2e1" width="400">
-
-### User Authentication
-Users can create accounts and log in to access personalized features.
-
-<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/dcbba38a-d784-4fa1-85e6-7a3efef6eaa6" width="400">
-<img src="https://github.com/OmarAmeer96/Recepo/assets/93061060/e657955b-2b7e-46cb-ae24-3a293ed38cbd" width="400">
-
-
 ## Installation
 
 1. Clone the repository:
